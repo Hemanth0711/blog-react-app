@@ -16,7 +16,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --ignore './client/'"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
