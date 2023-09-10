@@ -16,6 +16,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm i",
     "start": "nodemon index.js"
   },
   "author": "",
