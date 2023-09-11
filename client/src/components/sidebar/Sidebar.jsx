@@ -20,7 +20,7 @@ export default function SideBar() {
         <span className="sidebarTitle">
           ABOUT ME
         </span>
-        <img src = "https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/profile-photos-4.jpg"/>
+        <img src = "https://expertphotography.b-cdn.net/wp-content/uploads/2020/08/profile-photos-4.jpg" alt = ""/>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum exercitationem dolore pariatur nesciunt suscipit fugiat praesentium natus distinctio expedita optio excepturi dolor ab commodi, sapiente sunt debitis accusantium explicabo.</p>
       </div>
       <div className="sidebarItem">
