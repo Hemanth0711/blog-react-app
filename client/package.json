@@ -37,5 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3000/api/"
+  "proxy": "https://react-blog-api-7l23.onrender.com/api/"
 }
