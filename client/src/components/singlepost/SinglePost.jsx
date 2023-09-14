@@ -6,6 +6,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { Context } from '../../context/Context'
 import { useContext } from 'react'
+import { api } from "../../utils/utils.js";
 
 export default function SinglePost() {
   const location = useLocation();
@@ -20,7 +21,7 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/"+path);
+      const res = await axios.get(api+"/posts/"+path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -30,14 +31,14 @@ export default function SinglePost() {
   
   const handleDelete = async () => {
     try{
-      await axios.delete(`/posts/${post._id}`, {data: {username: user.username}});
+      await axios.delete(api+`/posts/${post._id}`, {data: {username: user.username}});
       window.location.replace("/");
     }catch(err){}
   };
 
   const handleUpdate = async () => {
     try{
-      await axios.post(`/posts/${post._id}`, {username: user.username, title, desc});
+      await axios.post(api+`/posts/${post._id}`, {username: user.username, title, desc});
       setEditMode(false);
     }catch(err){}
   }

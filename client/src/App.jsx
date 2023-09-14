@@ -11,7 +11,7 @@ import Register from './pages/register/Register';
 import { useContext } from 'react';
 import { Context } from './context/Context';
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const {user} = useContext(Context);
@@ -22,7 +22,6 @@ function App() {
       {/* <Write/> */}
       {/* <Settings /> */}
       {/* <Login /> */}
-     
       <Router>
         <Topbar />
         <Routes>
